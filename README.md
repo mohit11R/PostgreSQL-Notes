@@ -70,7 +70,18 @@ WHERE book_type = 'Computer Programming';
 
 A DBMS key is an column or set of columns which helps you to uniquely identify a row in a table.
 
+#### Types of DBMS Keys
 
+1) Super Key - A single key or a group of multiple keys that can uniquely identify tuples in a table
+2) Candidate Key - A Subset of Super keys and is devoid of any unnecessary attributes that are not important for uniquely identifying tuples. Candidate key for the following data is ID and Email ID.
+3) Primary Key - The Candidate key selected by the database administrator to uniquely identify tuples in a table. ID would be primary key for the following data 
+      
+        1) Should be unique -- cannot ever repeat
+        2) Should be not null -- Will always need a value
+
+4) Alternate key or Secondary key - The Candidate keys which are not the Primary Key. Email ID would be the alternate key.
+5) Foreign Key - An attribute which is a Primary Key in its parent table, but is included as an attribute in another host table. Id in the Second Table would be the foreign key.
+6) Composite key - Key that consists of two or more attributes that uniquely identify any record but individually the attributes are not keys. 
 
 
 
