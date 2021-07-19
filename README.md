@@ -102,7 +102,7 @@ Download - https://www.postgresql.org/download/
 1) SELECT -- It is used to choose the columns you want to view
 2) FROM -- It is used to choose the table from which you want the data.
 
-![App Screenshot](C:\Users\HP\Pictures\select_from.png)
+![alt text](https://github.com/[mohit11R]/[SQl-Notes]/blob/[main]/select_from.png?raw=true)
 
 
 
