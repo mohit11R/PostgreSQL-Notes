@@ -99,10 +99,65 @@ Download - https://www.postgresql.org/download/
 
 ### Postgresql Commands 
 
-1) SELECT -- It is used to choose the columns you want to view
+1) SELECT -- It is used to choose the columns you want to view and you can also select any columns.
 2) FROM -- It is used to choose the table from which you want the data.
 
+            SELECT column_name1, column_name2, .., column_nameX 
+            FROM schema_name.table_name;
+
+
 ![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/select_from.PNG?raw=true)
+
+3) LIMIT -- It is used to limit the amount of records returned as per a query.
+
+            SELECT * 
+            FROM public.customers 
+            LIMIT 10;
+            
+            
+![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/limit.PNG?raw=true)
+
+
+4) DISTINCT - IT is used to find the list of unique values of the column mentioned in the DISTINCT portion of the query. In case of multiple columns, DISTINCT returns a list of unique values of the combinations of the columns.
+            
+            SELECT DISTINCT column_name1, column_name2, .., column_nameX 
+            FROM schema_name.table_name;
+
+
+![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/dis.PNG?raw=true)
+
+
+5) COUNT - Unlike all the keywords we have discussed so far, COUNT is a function. It expects an input, does some processing, and returns an output. COUNT specifically expects only and exactly one input. It returns the count of values in a column.
+                  
+                  SELECT COUNT(column_name)
+                  FROM schema_name.table_name;
+
+![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/count.PNG?raw=true)
+
+
+We can also use DISTINCT in COUNT FUNCTION 
+
+COUNT DISTINCT combination is used to first find the distinct values in a column and then find the count of it
+                  
+                  SELECT COUNT(DISTINCT column_name)
+                  FROM schema_name.table_name;
+
+
+![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/count_dis.PNG?raw=true)
+
+
+##### Why COUNT(DISTINCT *) is incorrect?
+
+1) COUNT(*) works in SQL and DISTINCT * works too. 
+2) But, COUNT(DISTINCT *) doesn’t work. Logical explanation for that (although its not as per google. Google just gives a syntactical definition) is that while solving the bracket first, the DISTINCT * returns a list of columns which have had their duplicate tuples remove. So, COUNT, which expects only one parameter as input, now has more than one parameter in the form of the multiple columns. Hence, it throws an error
+
+ 
+
+
+
+
+
+
 
 
 
