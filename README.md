@@ -44,8 +44,12 @@
 2) The language that is commonly used to deal with databases is SQL. It let's you access and manipulate databases.
 3) And to understand SQL, we first need to know what the Q in SQL means. A query is really a question or request for data. For example, "tell me how how many books there are on computer Programming in the University library".
 
+```
+
 SELECT * FROM university.library 
 WHERE book_type = 'Computer Programming';
+
+```
 
 
 
