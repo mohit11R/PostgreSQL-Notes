@@ -1,0 +1,124 @@
+CREATE TABLE public.Sales(
+	Sale_ID serial PRIMARY KEY,
+	Customer_ID integer,
+	Sale_Date date,
+	Sale_Amount decimal(10,2),
+	Vendor_ID varchar(32)
+);
+
+
+INSERT INTO public.Sales(Customer_ID , Sale_Date, Sale_Amount, Vendor_ID)
+VALUES (16248,'2020-01-02','1540.9','1-A'),
+(14190,'2020-01-03','111.84','1-A'),
+(11317,'2020-01-04','-419.75','1-C'),
+(12952,'2020-01-05','38.76','2-B'),
+(13225,'2020-01-07','1220.6','3-C'),
+(10624,'2020-01-08','528.1','2-B'),
+(12952,'2020-01-12','1004.64','2-B'),
+(14190,'2020-01-12','1086.28','3-C'),
+(10192,'2020-01-13','77.34','1-A'),
+(15781,'2020-01-14','451.52','1-A'),
+(11317,'2020-01-15','483.36','3-C'),
+(15009,'2020-01-15','274.61','2-B'),
+(12952,'2020-01-16','869.85','2-B'),
+(14739,'2020-01-16','20.52','2-B'),
+(12952,'2020-01-17','98.7','3-C'),
+(10192,'2020-01-18','1096.56','3-C'),
+(14739,'2020-01-18','828.16','1-A'),
+(15781,'2020-01-18','108.49','3-C'),
+(11317,'2020-01-21','391.05','1-A'),
+(15009,'2020-01-29','-298.41','6-A'),
+(16248,'2020-02-03','1550.91','4-B'),
+(15781,'2020-02-04','78.91','4-A'),
+(10192,'2020-02-07','1098.8','3-A'),
+(10192,'2020-02-07','1654.33','3-C'),
+(16248,'2020-02-08','689.01','2-C'),
+(12952,'2020-02-08','-1135.2','2-C'),
+(11317,'2020-02-09','22.04','1-A'),
+(11317,'2020-02-13','1380.96','1-B'),
+(10192,'2020-02-13','686.66','4-C'),
+(11317,'2020-02-18','237.75','6-A'),
+(13225,'2020-02-23','1460.7','4-C'),
+(11317,'2020-02-26','1678.84','2-B'),
+(12952,'2020-02-26','16.74','4-B'),
+(16248,'2020-02-26','702.51','6-C'),
+(11317,'2020-02-27','947.53','5-A'),
+(11317,'2020-02-28','248.56','4-B'),
+(14190,'2020-02-28','163.38','6-A'),
+(11317,'2020-03-01','727.92','2-C'),
+(10192,'2020-03-01','1360.08','2-B'),
+(16248,'2020-03-02','-352.5','6-C'),
+(14739,'2020-03-08','774','6-B'),
+(10624,'2020-03-26','-890.4','1-C'),
+(15781,'2020-04-02','72.6','2-B'),
+(14190,'2020-04-06','533.14','5-B'),
+(11317,'2020-04-17','596.7','2-B'),
+(10192,'2020-04-20','-20.64','1-A'),
+(14190,'2020-04-22','-1586.88','2-A'),
+(15781,'2020-04-30','284','2-C'),
+(12952,'2020-05-01','-604.56','3-B'),
+(12952,'2020-05-05','249.12','4-B'),
+(14739,'2020-05-08','341.73','6-B'),
+(14190,'2020-05-12','199.74','3-A'),
+(14190,'2020-05-12','1208.36','3-A'),
+(10624,'2020-05-15','-121.74','4-A');
+
+
+
+CREATE TABLE public.Customers(
+	ID integer PRIMARY KEY,
+	First_Name varchar,
+	Last_Name varchar,
+	Email_ID varchar,
+	Age integer,
+	Gender char
+);
+
+
+INSERT INTO public.Customers(ID, First_Name, Last_Name, Email_ID, Age, Gender)Values
+(10192,'Jasmine','Anderson','jasmine.anderson@gmail.com',34,'F'),
+(14739,'Samantha','Abraham','samantha.abraham@gmail.com',34,'f'),
+(16248,'Frank','Ogden','frank.ogden@gmail.com',25,'M'),
+(11317,'Vanessa','Hudson','vanessa.hudson@gmail.com',31,'f'),
+(15781,'Michelle','Piper','michelle.piper@gmail.com',31,'f'),
+(10624,'Jane','Bailey','jane.bailey@gmail.com',28,'F'),
+(12952,'Brian','Sanderson','brian.sanderson@gmail.com',47,'M'),
+(15009,'Jason','Slater','jason.slater@gmail.com',31,'m'),
+(14190,'Justin','Vaughan','justin.vaughan@gmail.com',49,'m'),
+(13225,'Ryan','Nash','ryan.nash@gmail.com',49,'m'),
+(13462,'Edward','Lawrence','edward.lawrence@gmail.com',32,'M'),
+(14245,'Donna','Hill','donna.hill@gmail.com',46,'f'),
+(19227,'Jasmine','Anderson','jasmine.anderson2@gmail.com',48,'f');
+
+
+
+CREATE TABLE public.Vendors(
+	ID varchar PRIMARY KEY,
+	First_Name varchar,
+	Last_Name varchar,
+	Type_of_Job varchar,
+	Age integer,
+	Gender char(1)
+);
+
+INSERT INTO public.Vendors(ID, First_Name, Last_Name, Type_of_Job, Age, Gender)Values
+('1-A','Christian','Paige','Full',30,'M'),
+('2-A','Ryan','Carr','Part',29,'M'),
+('3-A','Kevin','Newman','Part',27,'M'),
+('4-A','Simon','Bailey','Full',30,'M'),
+('5-A','Christopher','Bower','Part',26,'M'),
+('6-A','Evan','Dyer','Part',28,'M'),
+('1-B','Matt','Peake','Full',27,'M'),
+('2-B','Sonia','Peake','Full',26,'F'),
+('3-B','Gordon','Dyer','Full',29,'M'),
+('4-B','Karen','Dowd','Full',27,'F'),
+('5-B','Jasmine','Dickens','Full',29,'F'),
+('6-B','Amy','Davidson','Full',28,'F'),
+('1-C','Stewart','Lee','Part',29,'M'),
+('2-C','Caroline','Powell','Full',29,'F'),
+('3-C','Jonathan','Nash','Part',27,'M'),
+('4-C','Jasmine','Nolan','Full',29,'F'),
+('5-C','Carolyn',NULL,'Full',26,'F'),
+('6-C','Kimberly','Coleman','Full',30,'F');
+
+
