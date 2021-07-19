@@ -1,4 +1,4 @@
-# SQL - Structure Query Language
+# SQL - Structured Query Language
 
 ### What is data?
 
