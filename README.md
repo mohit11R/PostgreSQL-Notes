@@ -95,6 +95,12 @@ A database schema is the skeleton structure that represents the logical view of 
 
 Download - https://www.postgresql.org/download/
 
+prerequisites
+
+1) Run SQL Shell
+2) Copy data from file code.txt
+3) paste in SQL Shell
+
 ---------------------------------------------------------------------------------------------------
 
 ### Postgresql Commands 
