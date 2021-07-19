@@ -19,4 +19,50 @@
 
 1) Set of related data organized in a way that it can be easily stored, changed and accessed at any time.
 2) Let’s consider an example – Netflix. As per my understanding, Netflix has database for its movies and tv shows, and it should have another one for the login/credentials details of the users and the movies/tv shows that they have been watching. After doing some analysis and modeling, it also recommends movies based on your watched history. 
-![image](https://user-images.githubusercontent.com/76819254/126111506-d24565c9-8891-4878-9ef4-597680e94784.png)
+
+---------------------------------------------------------------------------------------------------
+
+### What is a Database Management System?
+
+1) System that manages the storage and retrieval of data from databases.
+2) It is a collection of programs which enables its users to access database, manipulate data, reporting and representation of data.
+
+---------------------------------------------------------------------------------------------------
+
+### What is a Database Table?
+
+1) Collection of related data held in a table format within a database. Tables are database objects that contain the data in a database. A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"). Tables contain rows and columns
+2) Consists of columns and rows.
+3) A column is a set of data values of a particular type. A column is also called an attribute or fields.
+4) A row is a single set of data values of all attributes/columns. They are also called records or tuple.
+
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
