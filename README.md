@@ -83,6 +83,26 @@ A DBMS key is an column or set of columns which helps you to uniquely identify a
 5) Foreign Key - An attribute which is a Primary Key in its parent table, but is included as an attribute in another host table. Id in the Second Table would be the foreign key.
 6) Composite key - Key that consists of two or more attributes that uniquely identify any record but individually the attributes are not keys. 
 
+---------------------------------------------------------------------------------------------------
+
+### Database Schema
+
+A database schema is the skeleton structure that represents the logical view of the entire database. It defines how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied on the data.
+
+---------------------------------------------------------------------------------------------------
+
+### Postgresql Installation
+
+Download - https://www.postgresql.org/download/
+
+---------------------------------------------------------------------------------------------------
+
+### Postgresql Commands 
+
+1) SELECT -- It is used to choose the columns you want to view
+2) FROM -- It is used to choose the table from which you want the data.
+
+![App Screenshot](C:\Users\HP\Pictures\select_from.png)
 
 
 
