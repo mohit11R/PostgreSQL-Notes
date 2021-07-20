@@ -155,9 +155,9 @@ COUNT DISTINCT combination is used to first find the distinct values in a column
 ##### Why COUNT(DISTINCT *) is incorrect?
 
 1) COUNT(*) works in SQL and DISTINCT * works too. 
-2) But, COUNT(DISTINCT *) doesn’t work. Logical explanation for that (although its not as per google. Google just gives a syntactical definition) is that while solving the  
-bracket first, the DISTINCT * returns a list of columns which have had their duplicate tuples remove. So, COUNT, which expects only one parameter as input, now has more than one 
+2) But, COUNT(DISTINCT *) doesn’t work. Logical explanation for that (although its not as per google. Google just gives a syntactical definition) is that while solving the bracket first, the DISTINCT * returns a list of columns which have had their duplicate tuples remove. So, COUNT, which expects only one parameter as input, now has more than one 
 parameter in the form of the multiple columns. Hence, it throws an error
+
 
  
 
