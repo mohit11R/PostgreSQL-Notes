@@ -211,6 +211,11 @@ SELECT *
 FROM public.customers 
 WHERE UPPER(first_name) LIKE ‘JAS%';
 ```
+```
+ELECT *
+FROM public.customers 
+WHERE LOWER(first_name) LIKE ‘JAS%';
+```
 
 
 11) **IS NULL and IS NOT NUll**
