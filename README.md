@@ -124,7 +124,7 @@ prerequisites
 ![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/limit.PNG?raw=true)
 
 
-4) DISTINCT - IT is used to find the list of unique values of the column mentioned in the DISTINCT portion of the query. In case of multiple columns, DISTINCT returns a list of unique values of the combinations of the columns.
+4) DISTINCT -- IT is used to find the list of unique values of the column mentioned in the DISTINCT portion of the query. In case of multiple columns, DISTINCT returns a list of unique values of the combinations of the columns.
             
             SELECT DISTINCT column_name1, column_name2, .., column_nameX 
             FROM schema_name.table_name;
@@ -133,7 +133,7 @@ prerequisites
 ![alt text](https://github.com/mohit11R/SQl-Notes/blob/main/dis.PNG?raw=true)
 
 
-5) COUNT - Unlike all the keywords we have discussed so far, COUNT is a function. It expects an input, does some processing, and returns an output. COUNT specifically expects only and exactly one input. It returns the count of values in a column.
+5) COUNT -- Unlike all the keywords we have discussed so far, COUNT is a function. It expects an input, does some processing, and returns an output. COUNT specifically expects only and exactly one input. It returns the count of values in a column.
                   
                   SELECT COUNT(column_name)
                   FROM schema_name.table_name;
@@ -160,10 +160,71 @@ parameter in the form of the multiple columns. Hence, it throws an error
 
 
  
+ 6) **Where** -- filter rows returned by a SELECT statement.
+
+```
+SELECT column_name 
+FROM schema_name.table_name 
+WHERE column_nameX operator value;
+```
+
+7) **Operators** 
+
+      1) =
+      2) <
+      3) >
+      4) <=
+      5) >=
+      6) <>
+      7) !=
+      8) Between value1 AND value2
+      9) LIKE 'value'
+      10) IN (value1,value2,...,valueX)
+      11) AND, OR, NOT
+
+8) **LIKE in conjunction with Wildcards** 
+
+```
+SELECT *
+FROM public.customers 
+WHERE first_name LIKE ‘Jas%';
+```
+
+9) Types of Wildcards
+
+      1) % -- Represents zero or more characters
+      2) _ -- Represents a single character
+
+      ```
+      WHERE first_name LIKE 'ro%'; -- rohan, ro
+      WHERE first_name LIKE '%ro'; -- wipro, ro
+      WHERE first_name LIKE '%ro%'; -- trophy,road, electro, ro
+      WHERE first_name LIKE '_ro%'; -- iron, Fro
+      WHERE first_name LIKE 'ro_%_'; -- roam,round
+      ```
+      
+      
+10) **LOWER and UPPER in WHERE** 
+
+```
+SELECT *
+FROM public.customers 
+WHERE UPPER(first_name) LIKE ‘JAS%';
+```
 
 
+11) **IS NULL and IS NOT NUll**
 
-
+```
+SELECT *
+FROM schema_name.table_name 
+WHERE column_nameX IS NULL;
+```
+```
+SELECT *
+FROM schema_name.table_name 
+WHERE column_nameX IS NOT NULL;
+```
 
 
 
