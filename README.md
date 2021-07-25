@@ -218,7 +218,7 @@ WHERE LOWER(first_name) LIKE ‘JAS%';
 ```
 
 
-11) **IS NULL and IS NOT NUll**
+11) **IS NULL and IS NOT NULL**
 
 ```
 SELECT *
