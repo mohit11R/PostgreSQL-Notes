@@ -231,6 +231,26 @@ FROM schema_name.table_name
 WHERE column_nameX IS NOT NULL;
 ```
 
+12) **Aggregate Functions** 
+
+      1) SUM -- It returns the total summed values (Non-NULL) in a set.
+      2) AVG -- It returns the average value of an expression.
+      3) MIN -- It returns the minimum (lowest) value in a set.
+      4) MAX -- 	It returns the maximum (highest) value in a set.
+      5) COUNT -- It returns the number of rows, including rows with NULL values in a group.
+      6) FIRST -- It returns the first value of an expression.
+      7) LAST -- It returns the last value of an expression.
+
+```
+SELECT SUM(column1) , AVG(column1), MIN(column1),MAX(column1)
+FROM schema_name.table_name 
+
+```
+
+13) **GROUP BY**
+
+
+
 
 
 
