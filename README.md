@@ -259,8 +259,29 @@ FROM public.sales;
 
 14) **GROUP BY**
 
+The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+
+The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+```
+SELECT column1, SUM(column2) 
+FROM schema_name.table_name 
+WHERE condition 
+GROUP BY column1;
+```
+
+**Point to remember** – Once you have done a GROUP BY on a column (or multiple columns), only those are accessible for selection in SELECT without aggregation. Any other columns would need some form of aggregation to be used in SELECT.
 
 
+**Conditions of GROUP BY**
+      1) If column is mentioned in SELECT list excluding the ones used in aggregations, it has to be mentioned in the GROUP BY list.
+      2) If column is mentioned in GROUP BY list, it is not compulsory to mention it in the SELECT list, though if you do that, you won’t know which record the aggregated value is for.
+      3) Some DBMS (SQL Servers) allow the alias name to be used in the GROUP BY list.
+
+
+
+
+15) **HAVING**
 
 
 
