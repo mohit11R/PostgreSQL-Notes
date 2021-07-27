@@ -283,6 +283,16 @@ GROUP BY column1;
 
 15) **HAVING**
 
+The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.
+
+```
+SELECT column1, column2, aggregation(column3) 
+FROM schema_name.table_name  
+GROUP BY column1, column2 
+HAVING aggregation(column) operator value 
+```
+
+**Point to remember** -- WHERE only works for rows and not for the whole table, as shown in previous Poll. So, we cant perform aggregations in WHERE. To use Aggregations filters, we will need HAVING. HAVING is used to remove the groups (created as per GROUP BY) completely from the data. 
 
 
 
