@@ -230,7 +230,7 @@ SELECT *
 FROM schema_name.table_name 
 WHERE column_nameX IS NOT NULL;
 ```
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 12) **Aggregate Functions** 
 
       1) SUM -- It returns the total summed values (Non-NULL) in a set.
@@ -246,7 +246,7 @@ SELECT SUM(column1) , AVG(column1), MIN(column1),MAX(column1)
 FROM schema_name.table_name 
 
 ```
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 13) **Aliases**
 
 Aliases are used to give a table, or a column in a table, a temporary name.
@@ -256,7 +256,7 @@ SELECT MAX(sale_date) AS max_sale_date,
 MIN(sale_date) AS min_sale_date 
 FROM public.sales;
 ```
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 14) **GROUP BY**
 
 The GROUP BY statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
@@ -280,9 +280,7 @@ GROUP BY column1;
    2) If column is mentioned in GROUP BY list, it is not compulsory to mention it in the SELECT list, though if you do that, you won’t know which record the aggregated value is for.
       
    3) Some DBMS (SQL Servers) allow the alias name to be used in the GROUP BY list.
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 15) **HAVING**
 
