@@ -247,7 +247,18 @@ FROM schema_name.table_name
 
 ```
 
-13) **GROUP BY**
+13) **Aliases**
+
+Aliases are used to give a table, or a column in a table, a temporary name.
+
+```
+SELECT MAX(sale_date) AS max_sale_date, 
+MIN(sale_date) AS min_sale_date 
+FROM public.sales;
+```
+
+14) **GROUP BY**
+
 
 
 
