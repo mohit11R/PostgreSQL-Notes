@@ -274,9 +274,12 @@ GROUP BY column1;
 
 
 **Conditions of GROUP BY**
-      1) If column is mentioned in SELECT list excluding the ones used in aggregations, it has to be mentioned in the GROUP BY list.
-      2) If column is mentioned in GROUP BY list, it is not compulsory to mention it in the SELECT list, though if you do that, you won’t know which record the aggregated value is for.
-      3) Some DBMS (SQL Servers) allow the alias name to be used in the GROUP BY list.
+
+   1) If column is mentioned in SELECT list excluding the ones used in aggregations, it has to be mentioned in the GROUP BY list.
+      
+   2) If column is mentioned in GROUP BY list, it is not compulsory to mention it in the SELECT list, though if you do that, you won’t know which record the aggregated value is for.
+      
+   3) Some DBMS (SQL Servers) allow the alias name to be used in the GROUP BY list.
 
 
 
