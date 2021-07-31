@@ -302,6 +302,28 @@ HAVING aggregation(column) operator value
 
 16) **JOINS**
 
+**Types of Joins**
+
+1) INNER JOIN or JOIN
+2) LEFT JOIN or LEFT OUTER JOIN
+3) RIGHT JOIN or RIGHT OUTER JOIN
+4) FULL JOIN or FULL OUTER JOIN
+5) SELF JOIN (conceptual)
+6) CROSS JOIN  (conceptual)
+
+```
+Syntax for Joins
+
+SELECT table1.column1, table1.column2, table2.column1, table2.column2
+FROM schema_name.table1
+____ JOIN schema_name.table2 
+ON table1.columnX operator table2.column;
+
+```
+
+
+
+
 
 
 
