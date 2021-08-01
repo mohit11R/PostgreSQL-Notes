@@ -320,18 +320,70 @@ ____ JOIN schema_name.table2
 ON table1.columnX operator table2.column;
 
 ```
+**ON vs WHERE** 
+
+1) ON and WHERE would always give the same result in case of INNER JOIN.
+2) In case of any other JOIN, it isn’t necessary that the two queries give the same result. It could vary, as explained in the attached excel.
 
 
 
+1) **Inner Joins**
+
+The INNER JOIN keyword selects records that have matching values in both tables.
+
+```
+SELECT c.first_name, SUM(s.sale_amount) 
+FROM public.customers AS c
+INNER JOIN public.sales AS s
+ON c.id = s.customer_id
+WHERE c.age > 35 
+GROUP BY c.first_name 
+HAVING COUNT(s.sale_id) < 6 
+LIMIT 5;
+```
+
+2) **Left Join or Left Outer Join**
+
+The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2). The result is 0 records from the right side, if there is no match.
+
+The LEFT JOIN keyword returns all records from the left table (Customers), even if there are no matches in the right table (Orders).
 
 
+```
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+
+3) **Right Join or Right Outer Join**
+
+The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records from the left table (table1). The result is 0 records from the left side, if there is no match.
+
+The RIGHT JOIN keyword returns all records from the right table (Employees), even if there are no matches in the left table (Orders).
+
+```
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
 
 
+4) **Full Join or Full Outer Join**
+
+The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right (table2) table records.
 
 
+The FULL OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not. So, if there are rows in "Customers" that do not have matches in "Orders", or if there are rows in "Orders" that do not have matches in "Customers", those rows will be listed as well.
 
-
-
+```
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+```
 
 
 
