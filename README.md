@@ -325,6 +325,7 @@ ON table1.columnX operator table2.column;
 1) ON and WHERE would always give the same result in case of INNER JOIN.
 2) In case of any other JOIN, it isn’t necessary that the two queries give the same result. It could vary, as explained in the attached excel.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 1) **Inner Joins**
