@@ -385,6 +385,8 @@ FULL OUTER JOIN table2
 ON table1.column_name = table2.column_name
 WHERE condition;
 ```
+5) **SELF Join**
+6) **Cross Join**
 
 
 
